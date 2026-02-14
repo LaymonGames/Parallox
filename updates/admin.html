@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <link rel="icon" href="LL.png" type="image/png">
+  <meta charset="UTF-8">
+  <title>لوحة التحكم | Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+  <div id="loginView" class="admin-panel" style="text-align:center; margin: auto;">
+    <h1 style="margin-bottom:20px;">تسجيل الدخول 🔒</h1>
+    <div id="loginSection">
+      <input id="email" type="email" placeholder="البريد الإلكتروني">
+      <input id="password" type="password" placeholder="كلمة المرور">
+      <button id="loginBtn">دخول</button>
+    </div>
+  </div>
+
+  <div id="dashboardView" style="display: none; width: 100%; max-width: 600px; flex-direction: column; align-items: center; padding-bottom: 50px;">
+    
+    <div style="width: 100%; display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px;">
+        <h2 style="color:white; margin:0;">لوحة الادارة</h2>
+        <button id="logoutBtn" style="width:auto; background: #ff4757; margin:0; padding: 8px 15px; font-size: 0.9rem;">خروج</button>
+    </div>
+
+    <div class="admin-panel" style="width: 100%; margin-bottom: 40px;">
+      <h3 style="margin-bottom:15px; text-align:center;">رفع صورة جديدة 📸</h3>
+      <div id="uploadSection">
+        <input id="imageInput" type="file" accept="image/*">
+        <input id="descInput" type="text" placeholder="وصف الصورة">
+        <button id="uploadBtn">نشر الصورة 🚀</button>
+      </div>
+    </div>
+
+    <h2 style="margin-bottom:20px; text-align:center; width:100%; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+      إدارة الصور المرفوعة
+    </h2>
+
+    <div id="adminGallery" style="display: flex; flex-direction: column; gap: 30px; width: 100%;"></div>
+
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+
+</html>
