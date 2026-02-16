@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://laymongames.github.io/Parallox/sitemap.xml
